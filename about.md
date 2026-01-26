@@ -13,7 +13,7 @@ Write a brief introduction about yourself here. Include:
 
 ## Education
 
-- **[Your Degree]** - [University Name], [Year]
+- **[Your Degree]** - [Brigham Young University], [2026]
 - **Relevant Coursework**: Statistics, Data Analysis, Programming, etc.
 
 ## Skills & Interests
