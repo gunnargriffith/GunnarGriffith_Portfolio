@@ -15,7 +15,7 @@ Write a brief introduction about yourself here. Include:
 
 ## Education
 
-- **[Your Degree]** - [Brigham Young University], [2026]
+- **[Statistics]** - Brigham Young University, December 2026
 - **Relevant Coursework**: Statistics, Data Analysis, Data Science, and Programming
 
 ## Skills & Interests
@@ -43,8 +43,8 @@ Describe what you hope to achieve through your data science journey:
 ## Contact
 
 - **Email**: mozyjohn@gmail.com
-- **GitHub**: [gunnargriffith](https://github.com/gunnargriffith)
-- **LinkedIn**: [Gunnar Griffith](https://www.linkedin.com/feed/)
+- **GitHub**: [My Github Repos](https://github.com/gunnargriffith)
+- **LinkedIn**: [Gunnar Griffith Linkedin](https://www.linkedin.com/feed/)
 
 ---
 
