@@ -4,6 +4,8 @@ title: "About Me"
 
 ## Background
 
+
+
 Write a brief introduction about yourself here. Include:
 
 - Your academic background
@@ -14,12 +16,13 @@ Write a brief introduction about yourself here. Include:
 ## Education
 
 - **[Your Degree]** - [Brigham Young University], [2026]
-- **Relevant Coursework**: Statistics, Data Analysis, Programming, etc.
+- **Relevant Coursework**: Statistics, Data Analysis, Data Science, and Programming
 
 ## Skills & Interests
 
+
 ### Technical Skills
-- **Programming**: Python
+- **Programming**: Python, C++, R, Java
 - **Data Analysis**: Pandas, NumPy
 - **Visualization**: Matplotlib, Seaborn
 - **Machine Learning**: Scikit-learn
@@ -39,9 +42,9 @@ Describe what you hope to achieve through your data science journey:
 
 ## Contact
 
-- **Email**: your.email@example.com
-- **GitHub**: [github.com/your-username](https://github.com/your-username)
-- **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- **Email**: mozyjohn@gmail.com
+- **GitHub**: [gunnargriffith](https://github.com/gunnargriffith)
+- **LinkedIn**: [Gunnar Griffith](https://www.linkedin.com/feed/)
 
 ---
 
