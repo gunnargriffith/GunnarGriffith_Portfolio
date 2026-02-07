@@ -9,7 +9,7 @@ I enjoy learning and itentifying patterns. Thus I am studying Statistics, Data S
 
 ## Education
 
-- **[Statistics]** - Brigham Young University, December 2026
+- **Statistics with Data Science Empasis** - Brigham Young University, December 2026
 - **Relevant Coursework**: Statistics, Data Analysis, Data Science, and Programming
 
 ## Skills & Interests
@@ -31,7 +31,7 @@ I love playing strategy and resource board games, as well as camping and hiking.
 
 - I hope to through the remained of my schooling and in entry level postions to learn indestry
 standard processes and tools. In the long run I'd like to apply that knowledge to be able to
-make myself an strong asset on any team. 
+make myself a strong asset on any team. 
 
 ## Contact
 
