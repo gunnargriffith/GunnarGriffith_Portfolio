@@ -4,14 +4,8 @@ title: "About Me"
 
 ## Background
 
-
-
-Write a brief introduction about yourself here. Include:
-
-- Your academic background
-- Your interest in data science
-- Your career goals
-- Any relevant experience or projects
+My name is J. Gunnar Griffith. I am a senoir at BYU and will be graduating in December of 2026. 
+I enjoy learning and itentifying patterns. Thus I am studying Statistics, Data Science and Mathmatics.
 
 ## Education
 
@@ -19,6 +13,8 @@ Write a brief introduction about yourself here. Include:
 - **Relevant Coursework**: Statistics, Data Analysis, Data Science, and Programming
 
 ## Skills & Interests
+I have worked extensivley with different informational programs, many coding languages, and autoCAD.
+I love playing strategy and resource board games, as well as camping and hiking. 
 
 
 ### Technical Skills
@@ -29,20 +25,17 @@ Write a brief introduction about yourself here. Include:
 - **Tools**: Jupyter Notebooks, Git/GitHub
 
 ### Areas of Interest
-- [Your specific interests, e.g., environmental data, healthcare analytics, finance, etc.]
-- [Other areas you're curious about]
+- I am intrested in working in Data Analytics, and/or Data Engneering/Visualization
 
 ## Goals
 
-Describe what you hope to achieve through your data science journey:
-
-- Short-term learning objectives
-- Long-term career aspirations
-- Types of problems you want to solve
+- I hope to through the remained of my schooling and in entry level postions to learn indestry
+standard processes and tools. In the long run I'd like to apply that knowledge to be able to
+make myself an strong asset on any team. 
 
 ## Contact
 
-- **Email**: mozyjohn@gmail.com
+- **Email**: gjohng@byu.edu
 - **GitHub**: [My Github Repos](https://github.com/gunnargriffith)
 - **LinkedIn**: [Gunnar Griffith Linkedin](https://www.linkedin.com/feed/)
 
