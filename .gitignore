@@ -8,7 +8,7 @@ __pycache__/
 
 #my dataset
 *.csv
-
+docs/spotData/
 # Distribution / packaging
 .Python
 build/
