@@ -6,7 +6,9 @@ title: "Tutorial Blog"
 
 ![](images/spotify-logo-icon.webp)
 
-    Spotify provides a public API that includes playlist data and detailed audio features
+    
+
+Spotify provides a public API that includes playlist data and detailed audio features
 for individual tracks, such as Danceability, Energy, Speechiness, and Valence.
 
 For this project, I analyze a dataset containing Spotify’s official Top 200 songs
