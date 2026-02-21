@@ -194,6 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#research-questions" id="toc-research-questions" class="nav-link" data-scroll-target="#research-questions">Research Questions</a></li>
   <li><a href="#dataset-overview" id="toc-dataset-overview" class="nav-link" data-scroll-target="#dataset-overview">Dataset Overview</a></li>
   <li><a href="#data-cleaning-and-feature-engineering" id="toc-data-cleaning-and-feature-engineering" class="nav-link" data-scroll-target="#data-cleaning-and-feature-engineering">Data Cleaning and Feature Engineering</a></li>
+  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">Key Insights</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -259,6 +260,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Collapsed the dataset so each song appears only once.</li>
 <li>Computed average rank and total days in the Top 200 for each song.</li>
 </ul>
+<section id="correlation-between-audio-features-and-rank" class="level4">
+<h4 class="anchored" data-anchor-id="correlation-between-audio-features-and-rank">Correlation Between Audio Features and Rank</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/correlation_heatmap.png" class="img-fluid figure-img"></p>
+<figcaption>Correlation Heatmap</figcaption>
+</figure>
+</div>
+<p>The heatmap above shows how each audio feature correlates with average rank score. We can see which characteristics are most strongly associated with higher-ranking songs. Positive correlations indicate that higher values of a feature are linked to better rankings.</p>
+</section>
+<section id="multi-artist-songs-vs-solo-songs" class="level4">
+<h4 class="anchored" data-anchor-id="multi-artist-songs-vs-solo-songs">Multi-Artist Songs vs Solo Songs</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/multi_artist_boxplot.png" class="img-fluid figure-img"></p>
+<figcaption>Multi-Artist Boxplot</figcaption>
+</figure>
+</div>
+<p>This boxplot compares average rank scores for solo and multi-artist songs. It helps answer whether collaborations tend to perform better after controlling for audio features. We can see differences in the distribution of rank scores between the two groups.</p>
+</section>
+<section id="regression-coefficients-of-audio-features-and-collaboration-status" class="level4">
+<h4 class="anchored" data-anchor-id="regression-coefficients-of-audio-features-and-collaboration-status">Regression Coefficients of Audio Features and Collaboration Status</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/regression_coefficients.png" class="img-fluid figure-img"></p>
+<figcaption>Regression Coefficients</figcaption>
+</figure>
+</div>
+<p>This plot shows the effect size of each feature on average rank score according to a linear regression model. Features with larger positive values are associated with higher ranks, while negative values indicate that increasing that feature tends to lower the ranking. The <code>multi_artist</code> coefficient shows the adjusted effect of collaborations on song ranking.</p>
+</section>
+</section>
+<section id="key-insights" class="level3">
+<h3 class="anchored" data-anchor-id="key-insights">Key Insights</h3>
+<ul>
+<li>Danceability and Energy tend to be positively associated with higher rankings.</li>
+<li>Acousticness and Instrumentalness are negatively associated with rank.</li>
+<li>Multi-artist collaborations show a small positive effect on ranking.</li>
+<li>Songs that appear frequently in the Top 200 often exhibit these high-ranking audio features.</li>
+</ul>
+<p>As a bonus fun fact that I enjoyed: The song featured the most days of any during this time period was Sunflower by Post Malone with a incredible 3262 days included in the Top 200 Playlist.</p>
 
 
 <!-- -->
@@ -762,7 +803,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Created a <span class="in">`multi_artist`</span> variable indicating whether a song has multiple performers.</span>
 <span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Converted ranking into a <span class="in">`rank_score`</span> where higher values indicate better performance.</span>
 <span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collapsed the dataset so each song appears only once.</span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Computed average rank and total days in the Top 200 for each song.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Computed average rank and total days in the Top 200 for each song.</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Correlation Between Audio Features and Rank</span></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="al">![Correlation Heatmap](images/correlation_heatmap.png)</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>The heatmap above shows how each audio feature correlates with average rank score. </span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>We can see which characteristics are most strongly associated with higher-ranking songs. </span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>Positive correlations indicate that higher values of a feature are linked to better rankings.</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Multi-Artist Songs vs Solo Songs</span></span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="al">![Multi-Artist Boxplot](images/multi_artist_boxplot.png)</span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>This boxplot compares average rank scores for solo and multi-artist songs. </span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>It helps answer whether collaborations tend to perform better after controlling </span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>for audio features. We can see differences in the distribution of rank scores between the two groups.</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Regression Coefficients of Audio Features and Collaboration Status</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="al">![Regression Coefficients](images/regression_coefficients.png)</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>This plot shows the effect size of each feature on average rank score according to a </span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>linear regression model. Features with larger positive values are associated with higher ranks, </span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>while negative values indicate that increasing that feature tends to lower the ranking. </span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>The <span class="in">`multi_artist`</span> coefficient shows the adjusted effect of collaborations on song ranking.</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a><span class="fu">### Key Insights</span></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Danceability and Energy tend to be positively associated with higher rankings.</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Acousticness and Instrumentalness are negatively associated with rank.</span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Multi-artist collaborations show a small positive effect on ranking.</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Songs that appear frequently in the Top 200 often exhibit these high-ranking audio features.</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>As a bonus fun fact that I enjoyed: The song featured the most days of any during this time period was</span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>Sunflower by Post Malone with a incredible 3262 days included in the Top 200 Playlist. </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
