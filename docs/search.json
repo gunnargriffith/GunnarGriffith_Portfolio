@@ -1,0 +1,123 @@
+[
+  {
+    "objectID": "projects/final-project.html",
+    "href": "projects/final-project.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "This is coming down the pipeline. Check again later.",
+    "crumbs": [
+      "Final Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html",
+    "href": "projects/data-acquisition.html",
+    "title": "Data Acquisition Project",
+    "section": "",
+    "text": "This is coming down the pipeline. Check again later.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "My name is J. Gunnar Griffith. I am a senoir at BYU and will be graduating in December of 2026. I enjoy learning and itentifying patterns. Thus I am studying Statistics, Data Science and Mathmatics."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Me",
+    "section": "",
+    "text": "My name is J. Gunnar Griffith. I am a senoir at BYU and will be graduating in December of 2026. I enjoy learning and itentifying patterns. Thus I am studying Statistics, Data Science and Mathmatics."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\nStatistics with Data Science Empasis - Brigham Young University, December 2026\nRelevant Coursework: Statistics, Data Analysis, Data Science, and Programming"
+  },
+  {
+    "objectID": "about.html#skills-interests",
+    "href": "about.html#skills-interests",
+    "title": "About Me",
+    "section": "Skills & Interests",
+    "text": "Skills & Interests\nI have worked extensivley with different informational programs, many coding languages, and autoCAD. I love playing strategy and resource board games, as well as camping and hiking.\n\nTechnical Skills\n\nProgramming: Python, C++, R, Java\nData Analysis: Pandas, NumPy\nVisualization: Matplotlib, Seaborn\nMachine Learning: Scikit-learn\nTools: Jupyter Notebooks, Git/GitHub\n\n\n\nAreas of Interest\n\nI am intrested in working in Data Analytics, and/or Data Engneering/Visualization"
+  },
+  {
+    "objectID": "about.html#goals",
+    "href": "about.html#goals",
+    "title": "About Me",
+    "section": "Goals",
+    "text": "Goals\n\nI hope to through the remained of my schooling and in entry level postions to learn indestry standard processes and tools. In the long run I’d like to apply that knowledge to be able to make myself a strong asset on any team."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About Me",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: gjohng@byu.edu\nGitHub: My Github Repos\nLinkedIn: Gunnar Griffith Linkedin\n\n\nThis portfolio showcases my learning progress and projects completed during my data science studies."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Welcome to my data science portfolio! This site shows my journey learning data science and analytics. Here you’ll find projects that demonstrate what I’ve learned and discovered.\n\n\nThis portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages.\n\n\n\n\nProgramming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data\n\n\n\n\n\n\n\nLearn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+  },
+  {
+    "objectID": "index.html#about-this-portfolio",
+    "href": "index.html#about-this-portfolio",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "This portfolio shows my work learning data science. Each project includes:\n\nMy code with documentation\nVisualizations I created\nWhat I learned and discovered\n\nI built this site using Quarto and host it on GitHub Pages."
+  },
+  {
+    "objectID": "index.html#skills-im-learning",
+    "href": "index.html#skills-im-learning",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Programming: Python, Pandas for data analysis\nVisualization: Creating charts with Matplotlib and Seaborn\nData Collection: Getting data from files, websites, and APIs\nAnalysis: Finding patterns and answering questions with data"
+  },
+  {
+    "objectID": "index.html#my-projects",
+    "href": "index.html#my-projects",
+    "title": "Welcome to My Data Science Portfolio",
+    "section": "",
+    "text": "Learn how I explore datasets to find interesting patterns and answer questions.\n\n\n\nSee how I gather data from different sources and prepare it for analysis.\n\n\n\nSee how I tackle a data science project beginning to end.\n\n\n\nThanks for visiting! Feel free to explore my projects and see what I’m learning."
+  },
+  {
+    "objectID": "projects/eda.html",
+    "href": "projects/eda.html",
+    "title": "EDA Project",
+    "section": "",
+    "text": "This is coming down the pipeline. Check again later.",
+    "crumbs": [
+      "EDA Project"
+    ]
+  },
+  {
+    "objectID": "tutorial.html",
+    "href": "tutorial.html",
+    "title": "Tutorial Blog",
+    "section": "",
+    "text": "Spotify provides a public API that includes playlist data and detailed audio features\nfor individual tracks, such as Danceability, Energy, Speechiness, and Valence.\nFor this project, I analyze a dataset containing Spotify’s official Top 200 songs from 2016 to 2023. The goal is to explore which musical characteristics are most associated with higher-ranking songs and whether collaborations outperform solo artists.\n\n\n\nWhich audio features significantly predict higher chart ranking?\nDo songs performed by multiple artists achieve higher rankings than solo-artist songs?\n\n\n\n\nThe dataset includes the following variables:\n\nRank\nTitle\nArtists\nDanceability\nEnergy\nSpeechiness\nAcousticness\nInstrumentalness\nValence\nPoints (Total)\n\nEach row represents a song’s daily appearance in the Spotify Top 200.\n\n\n\nTo prepare the dataset for analysis, I:\n\nCreated a multi_artist variable indicating whether a song has multiple performers.\nConverted ranking into a rank_score where higher values indicate better performance.\nCollapsed the dataset so each song appears only once.\nComputed average rank and total days in the Top 200 for each song."
+  },
+  {
+    "objectID": "tutorial.html#data-analysis-tutorial---spotify-top-200",
+    "href": "tutorial.html#data-analysis-tutorial---spotify-top-200",
+    "title": "Tutorial Blog",
+    "section": "",
+    "text": "Spotify provides a public API that includes playlist data and detailed audio features\nfor individual tracks, such as Danceability, Energy, Speechiness, and Valence.\nFor this project, I analyze a dataset containing Spotify’s official Top 200 songs from 2016 to 2023. The goal is to explore which musical characteristics are most associated with higher-ranking songs and whether collaborations outperform solo artists.\n\n\n\nWhich audio features significantly predict higher chart ranking?\nDo songs performed by multiple artists achieve higher rankings than solo-artist songs?\n\n\n\n\nThe dataset includes the following variables:\n\nRank\nTitle\nArtists\nDanceability\nEnergy\nSpeechiness\nAcousticness\nInstrumentalness\nValence\nPoints (Total)\n\nEach row represents a song’s daily appearance in the Spotify Top 200.\n\n\n\nTo prepare the dataset for analysis, I:\n\nCreated a multi_artist variable indicating whether a song has multiple performers.\nConverted ranking into a rank_score where higher values indicate better performance.\nCollapsed the dataset so each song appears only once.\nComputed average rank and total days in the Top 200 for each song."
+  },
+  {
+    "objectID": "spotify_analysis.html",
+    "href": "spotify_analysis.html",
+    "title": "",
+    "section": "",
+    "text": "CodeShow All CodeHide All Code\n\n\n\n\n\n\nCode\nimport pandas as pd\n\n\npath = r\"docs/spotData/Spotify_Dataset_V3.csv\"\n\ndf = pd.read_csv(path,\n                 sep=';',            \n                 engine='python',    \n                 # optional extras:\n                 # quoting=3,       # csv.QUOTE_NONE if there are unescaped quotes\n                 # on_bad_lines='skip'\n                 )\n\nprint(df.shape)\ndf.head()\n\n\n(651936, 20)\n\n\n\n\n\n\n\n\n\nRank\nTitle\nArtists\nDate\nDanceability\nEnergy\nLoudness\nSpeechiness\nAcousticness\nInstrumentalness\nValence\n# of Artist\nArtist (Ind.)\n# of Nationality\nNationality\nContinent\nPoints (Total)\nPoints (Ind for each Artist/Nat)\nid\nSong URL\n\n\n\n\n0\n1\nElla Baila Sola\nEslabon Armado, Peso Pluma\n29/05/2023\n0.668\n0.758\n-5176.0\n0.033\n0.483\n0.000\n0.834\nArtist 1\nEslabon Armado\nNationality 1\nMexico\nLatin-America\n200\n100.0\n3qQbCzHBycnDpGskqOWY0E\nhttps://open.spotify.com/track/3qQbCzHBycnDpGs...\n\n\n1\n1\nElla Baila Sola\nEslabon Armado, Peso Pluma\n29/05/2023\n0.668\n0.758\n-5176.0\n0.033\n0.483\n0.000\n0.834\nArtist 2\nPeso Pluma\nNationality 2\nMexico\nLatin-America\n200\n100.0\n3qQbCzHBycnDpGskqOWY0E\nhttps://open.spotify.com/track/3qQbCzHBycnDpGs...\n\n\n2\n2\nWHERE SHE GOES\nBad Bunny\n29/05/2023\n0.652\n0.800\n-4019.0\n0.061\n0.143\n0.629\n0.234\nArtist 1\nBad Bunny\nNationality 1\nPuerto Rico\nLatin-America\n199\n199.0\n7ro0hRteUMfnOioTFI5TG1\nhttps://open.spotify.com/track/7ro0hRteUMfnOio...\n\n\n3\n3\nLa Bebe - Remix\nYng Lvcas, Peso Pluma\n29/05/2023\n0.812\n0.479\n-5678.0\n0.333\n0.213\n0.000\n0.559\nArtist 1\nYng Lvcas\nNationality 1\nMexico\nLatin-America\n198\n99.0\n2UW7JaomAMuX9pZrjVpHAU\nhttps://open.spotify.com/track/2UW7JaomAMuX9pZ...\n\n\n4\n3\nLa Bebe - Remix\nYng Lvcas, Peso Pluma\n29/05/2023\n0.812\n0.479\n-5678.0\n0.333\n0.213\n0.000\n0.559\nArtist 2\nPeso Pluma\nNationality 2\nMexico\nLatin-America\n198\n99.0\n2UW7JaomAMuX9pZrjVpHAU\nhttps://open.spotify.com/track/2UW7JaomAMuX9pZ...\n\n\n\n\n\n\n\n\n\nCode\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n#corr = df[['Rank','Danceability','Energy','Loudness','Speechiness',\n           #'Acousticness','Instrumentalness','Valence','Points (Total)']].corr()\n\n#sns.heatmap(corr, annot=True, cmap=\"coolwarm\")\n#plt.title(\"Correlation Between Audio Features and Rank\")\n#plt.show()\n\n\n\n---------------------------------------------------------------------------\nModuleNotFoundError                       Traceback (most recent call last)\nCell In[2], line 1\n----&gt; 1 import seaborn as sns\n      2 import matplotlib.pyplot as plt\n      4 #corr = df[['Rank','Danceability','Energy','Loudness','Speechiness',\n      5            #'Acousticness','Instrumentalness','Valence','Points (Total)']].corr()\n      6 \n      7 #sns.heatmap(corr, annot=True, cmap=\"coolwarm\")\n      8 #plt.title(\"Correlation Between Audio Features and Rank\")\n      9 #plt.show()\n\nModuleNotFoundError: No module named 'seaborn'\n\n\n\n\n\nCode\ndf['Date'] = pd.to_datetime(df['Date'])\n\ndf.groupby('Date')['Energy'].mean().plot()\nplt.title(\"Average Song Energy Over Time\")\nplt.ylabel(\"Energy\")\nplt.show()\n\n\n\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\nCell In[13], line 3\n      1 df['Date'] = pd.to_datetime(df['Date'])\n----&gt; 3 df.groupby('Date')['Energy'].mean().plot()\n      4 plt.title(\"Average Song Energy Over Time\")\n      5 plt.ylabel(\"Energy\")\n\nFile c:\\Users\\Gunnar Griffith\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pandas\\plotting\\_core.py:1105, in PlotAccessor.__call__(self, *args, **kwargs)\n   1104 def __call__(self, *args, **kwargs):\n-&gt; 1105     plot_backend = _get_plot_backend(kwargs.pop(\"backend\", None))\n   1107     x, y, kind, kwargs = self._get_call_args(\n   1108         plot_backend.__name__, self._parent, args, kwargs\n   1109     )\n   1111     kind = self._kind_aliases.get(kind, kind)\n\nFile c:\\Users\\Gunnar Griffith\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pandas\\plotting\\_core.py:2253, in _get_plot_backend(backend)\n   2250 if backend_str in _backends:\n   2251     return _backends[backend_str]\n-&gt; 2253 module = _load_backend(backend_str)\n   2254 _backends[backend_str] = module\n   2255 return module\n\nFile c:\\Users\\Gunnar Griffith\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pandas\\plotting\\_core.py:2183, in _load_backend(backend)\n   2181         module = importlib.import_module(\"pandas.plotting._matplotlib\")\n   2182     except ImportError:\n-&gt; 2183         raise ImportError(\n   2184             \"matplotlib is required for plotting when the \"\n   2185             'default backend \"matplotlib\" is selected.'\n   2186         ) from None\n   2187     return module\n   2189 found_backend = False\n\nImportError: matplotlib is required for plotting when the default backend \"matplotlib\" is selected."
+  }
+]
