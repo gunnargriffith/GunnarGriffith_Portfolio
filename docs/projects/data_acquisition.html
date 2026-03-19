@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Acquisition Project: Finding the Perfect New Book – Gunnar Griffith - Statistics and Data Science Portfolio</title>
+<title>Finding the Perfect New Book – Gunnar Griffith - Statistics and Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -152,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="dropdown-text">Exploratory Data Analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../projects/data-acquisition.qmd">
+    <a class="dropdown-item" href="../projects/data_acquisition.html">
  <span class="dropdown-text">Data Acquisition</span></a>
   </li>  
         <li>
@@ -203,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Data Acquisition Project: Finding the Perfect New Book</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Finding the Perfect New Book</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -256,13 +256,151 @@ Once the page content is loaded, BeautifulSoup is used to locate each book conta
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>rating <span class="op">=</span> rating_element.text.strip()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This process is repeated for each book in the dataset, and the extracted ratings are stored in a list and appended to the main DataFrame as a new column. To improve usability and monitor progress during this relatively time-intensive step, a progress bar was implemented using the tqdm library. This provides real-time feedback on scraping progress across all entries. Although this approach is slower than scraping static content, it ensures accurate retrieval of dynamically loaded data and significantly enhances the analytical value of the final dataset. I also chose to remove the “link” subsection from the final databank as it’s not useful for anaylsis.</p>
 </section>
-<section id="analysis" class="level2">
-<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
-<p>What you explored (genre vs rating, etc.)</p>
+<section id="first-10-rows" class="level2">
+<h2 class="anchored" data-anchor-id="first-10-rows">First 10 Rows</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 4%">
+<col style="width: 3%">
+<col style="width: 48%">
+<col style="width: 4%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author</th>
+<th style="text-align: left;">In A Series</th>
+<th style="text-align: right;">Pages</th>
+<th style="text-align: right;">Year</th>
+<th style="text-align: left;">Genres/Tags</th>
+<th style="text-align: right;">Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Project Hail MaryAndy Weir</td>
+<td style="text-align: left;">Andy Weir</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">476</td>
+<td style="text-align: right;">2021</td>
+<td style="text-align: left;">[‘funny’, ‘adventurous’, ‘hopeful’, ‘science fiction’, ‘fiction’, ‘medium-paced’]</td>
+<td style="text-align: right;">4.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">In Her Own LeagueLiz Tomforde</td>
+<td style="text-align: left;">Liz Tomforde</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">440</td>
+<td style="text-align: right;">2026</td>
+<td style="text-align: left;">[‘sports’, ‘emotional’, ‘romance’, ‘lighthearted’, ‘funny’, ‘fiction’, ‘medium-paced’, ‘contemporary’]</td>
+<td style="text-align: right;">4.47</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">This Story Might Save Your LifeTiffany Crum</td>
+<td style="text-align: left;">Tiffany Crum</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">368</td>
+<td style="text-align: right;">2026</td>
+<td style="text-align: left;">[‘emotional’, ‘thriller’, ‘crime’, ‘tense’, ‘fiction’, ‘fast-paced’, ‘mysterious’]</td>
+<td style="text-align: right;">4.22</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The CorrespondentVirginia Evans</td>
+<td style="text-align: left;">Virginia Evans</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: left;">[‘reflective’, ‘emotional’, ‘literary’, ‘hopeful’, ‘fiction’, ‘medium-paced’, ‘contemporary’]</td>
+<td style="text-align: right;">4.54</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dungeon Crawler CarlMatt Dinniman</td>
+<td style="text-align: left;">Matt Dinniman</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">446</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: left;">[‘fantasy’, ‘funny’, ‘adventurous’, ‘science fiction’, ‘fiction’, ‘fast-paced’]</td>
+<td style="text-align: right;">4.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">And Now, Back To YouB.K. Borison</td>
+<td style="text-align: left;">B.K. Borison</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">448</td>
+<td style="text-align: right;">2026</td>
+<td style="text-align: left;">[‘emotional’, ‘romance’, ‘lighthearted’, ‘funny’, ‘fiction’, ‘medium-paced’, ‘contemporary’]</td>
+<td style="text-align: right;">4.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">I Who Have Never Known MenJacqueline Harpman</td>
+<td style="text-align: left;">Jacqueline Harpman</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">1995</td>
+<td style="text-align: left;">[‘reflective’, ‘dark’, ‘literary’, ‘fiction’, ‘dystopian’, ‘medium-paced’, ‘mysterious’]</td>
+<td style="text-align: right;">4.21</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Heart the LoverLily King</td>
+<td style="text-align: left;">Lily King</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">249</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: left;">[‘reflective’, ‘sad’, ‘emotional’, ‘literary’, ‘fiction’, ‘fast-paced’]</td>
+<td style="text-align: right;">4.39</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Wild Dark ShoreCharlotte McConaghy</td>
+<td style="text-align: left;">Charlotte McConaghy</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: left;">[‘dark’, ‘emotional’, ‘thriller’, ‘literary’, ‘fiction’, ‘medium-paced’, ‘mysterious’]</td>
+<td style="text-align: right;">4.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Half His AgeJennette McCurdy</td>
+<td style="text-align: left;">Jennette McCurdy</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">276</td>
+<td style="text-align: right;">2026</td>
+<td style="text-align: left;">[‘dark’, ‘emotional’, ‘literary’, ‘fiction’, ‘fast-paced’, ‘contemporary’]</td>
+<td style="text-align: right;">3.51</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Key takeaways.</p>
+<section id="data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis">Data Analysis</h2>
+<p>First simple chack I ran with this is highest rated stand alone book and the highest rated series book. The winners are~ Best Standalone Book: Title One Day, Everyone Will Have Always Been Agains… Rating 4.69</p>
+<p>Best Series Book: Title The Way of KingsBrandon Sanderson Rating 4.63</p>
+</section>
+<section id="top-performing-genres" class="level2">
+<h2 class="anchored" data-anchor-id="top-performing-genres">Top Performing Genres</h2>
+<p>Next I wanted to check what tags where performing the best: <img src="top_genres.png" class="img-fluid" alt="Top Genres"></p>
+<p>Kind of a let down there with politics and informitive doing the best, but one could always filter for the geners they want or search within a specific genere.</p>
+</section>
+<section id="average-ratings-of-top-200-books" class="level2">
+<h2 class="anchored" data-anchor-id="average-ratings-of-top-200-books">Average Ratings of Top 200 Books</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="rating_distribution.png" class="img-fluid figure-img"></p>
+<figcaption>Average Ratings</figcaption>
+</figure>
+</div>
+</section>
+<section id="top-authors" class="level2">
+<h2 class="anchored" data-anchor-id="top-authors">Top Authors</h2>
+<p>Only those with multiple enteries were counted <img src="top_authors.png" class="img-fluid" alt="Top Authors"></p>
+</section>
+<section id="my-take-away" class="level2">
+<h2 class="anchored" data-anchor-id="my-take-away">My Take Away</h2>
+<p>For the sake of my own limited computing capasity I only took about the top 200 entries of the trending tab. My repo could easliy be tweeked to gather the booklists from a bigger selection or different area of the page if more varied info is wanted. If nothing else this was a great learning experiance for me on how to be smarter with scraping and were you get your data from.</p>
+<p><strong>Full Code Repository: </strong><a href="https://github.com/gunnargriffith/Data-Acquisition/tree/main">GitHub - Data Acquisition</a></p>
+<p><strong>Book Review Site: </strong><a href="https://app.thestorygraph.com/browse">The Story Graph</a></p>
 
 
 <!-- -->
@@ -725,7 +863,7 @@ Once the page content is loaded, BeautifulSoup is used to locate each book conta
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Data Acquisition Project: Finding the Perfect New Book"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Finding the Perfect New Book"</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
@@ -776,11 +914,49 @@ Once the page content is loaded, BeautifulSoup is used to locate each book conta
 <span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>This process is repeated for each book in the dataset, and the extracted ratings are stored in a list and appended to the main DataFrame as a new column. To improve usability and monitor progress during this relatively time-intensive step, a progress bar was implemented using the tqdm library. This provides real-time feedback on scraping progress across all entries. Although this approach is slower than scraping static content, it ensures accurate retrieval of dynamically loaded data and significantly enhances the analytical value of the final dataset. I also chose to remove the "link" subsection from the final databank as it's not useful for anaylsis.</span>
 <span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a><span class="fu">## Analysis</span></span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>What you explored (genre vs rating, etc.)</span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conclusion</span></span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>Key takeaways.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a><span class="fu">## First 10 Rows</span></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Title                                        <span class="pp">|</span> Author              <span class="pp">|</span> In A Series   <span class="pp">|</span>   Pages <span class="pp">|</span>   Year <span class="pp">|</span> Genres/Tags                                                                                            <span class="pp">|</span>   Rating <span class="pp">|</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a><span class="pp">|:---------------------------------------------|:--------------------|:--------------|--------:|-------:|:-------------------------------------------------------------------------------------------------------|---------:|</span></span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Project Hail MaryAndy Weir                   <span class="pp">|</span> Andy Weir           <span class="pp">|</span> False         <span class="pp">|</span>     476 <span class="pp">|</span>   2021 <span class="pp">|</span> <span class="co">[</span><span class="ot">'funny', 'adventurous', 'hopeful', 'science fiction', 'fiction', 'medium-paced'</span><span class="co">]</span>                      <span class="pp">|</span>     4.5  <span class="pp">|</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> In Her Own LeagueLiz Tomforde                <span class="pp">|</span> Liz Tomforde        <span class="pp">|</span> True          <span class="pp">|</span>     440 <span class="pp">|</span>   2026 <span class="pp">|</span> <span class="co">[</span><span class="ot">'sports', 'emotional', 'romance', 'lighthearted', 'funny', 'fiction', 'medium-paced', 'contemporary'</span><span class="co">]</span> <span class="pp">|</span>     4.47 <span class="pp">|</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> This Story Might Save Your LifeTiffany Crum  <span class="pp">|</span> Tiffany Crum        <span class="pp">|</span> False         <span class="pp">|</span>     368 <span class="pp">|</span>   2026 <span class="pp">|</span> <span class="co">[</span><span class="ot">'emotional', 'thriller', 'crime', 'tense', 'fiction', 'fast-paced', 'mysterious'</span><span class="co">]</span>                     <span class="pp">|</span>     4.22 <span class="pp">|</span></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> The CorrespondentVirginia Evans              <span class="pp">|</span> Virginia Evans      <span class="pp">|</span> False         <span class="pp">|</span>     304 <span class="pp">|</span>   2025 <span class="pp">|</span> <span class="co">[</span><span class="ot">'reflective', 'emotional', 'literary', 'hopeful', 'fiction', 'medium-paced', 'contemporary'</span><span class="co">]</span>          <span class="pp">|</span>     4.54 <span class="pp">|</span></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Dungeon Crawler CarlMatt Dinniman            <span class="pp">|</span> Matt Dinniman       <span class="pp">|</span> True          <span class="pp">|</span>     446 <span class="pp">|</span>   2020 <span class="pp">|</span> <span class="co">[</span><span class="ot">'fantasy', 'funny', 'adventurous', 'science fiction', 'fiction', 'fast-paced'</span><span class="co">]</span>                        <span class="pp">|</span>     4.4  <span class="pp">|</span></span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> And Now, Back To YouB.K. Borison             <span class="pp">|</span> B.K. Borison        <span class="pp">|</span> True          <span class="pp">|</span>     448 <span class="pp">|</span>   2026 <span class="pp">|</span> <span class="co">[</span><span class="ot">'emotional', 'romance', 'lighthearted', 'funny', 'fiction', 'medium-paced', 'contemporary'</span><span class="co">]</span>           <span class="pp">|</span>     4.3  <span class="pp">|</span></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> I Who Have Never Known MenJacqueline Harpman <span class="pp">|</span> Jacqueline Harpman  <span class="pp">|</span> False         <span class="pp">|</span>     201 <span class="pp">|</span>   1995 <span class="pp">|</span> <span class="co">[</span><span class="ot">'reflective', 'dark', 'literary', 'fiction', 'dystopian', 'medium-paced', 'mysterious'</span><span class="co">]</span>               <span class="pp">|</span>     4.21 <span class="pp">|</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Heart the LoverLily King                     <span class="pp">|</span> Lily King           <span class="pp">|</span> False         <span class="pp">|</span>     249 <span class="pp">|</span>   2025 <span class="pp">|</span> <span class="co">[</span><span class="ot">'reflective', 'sad', 'emotional', 'literary', 'fiction', 'fast-paced'</span><span class="co">]</span>                                <span class="pp">|</span>     4.39 <span class="pp">|</span></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Wild Dark ShoreCharlotte McConaghy           <span class="pp">|</span> Charlotte McConaghy <span class="pp">|</span> False         <span class="pp">|</span>     302 <span class="pp">|</span>   2025 <span class="pp">|</span> <span class="co">[</span><span class="ot">'dark', 'emotional', 'thriller', 'literary', 'fiction', 'medium-paced', 'mysterious'</span><span class="co">]</span>                 <span class="pp">|</span>     4.2  <span class="pp">|</span></span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Half His AgeJennette McCurdy                 <span class="pp">|</span> Jennette McCurdy    <span class="pp">|</span> False         <span class="pp">|</span>     276 <span class="pp">|</span>   2026 <span class="pp">|</span> <span class="co">[</span><span class="ot">'dark', 'emotional', 'literary', 'fiction', 'fast-paced', 'contemporary'</span><span class="co">]</span>                             <span class="pp">|</span>     3.51 <span class="pp">|</span></span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Analysis</span></span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>First simple chack I ran with this is highest rated stand alone book and the highest rated series book. The winners are~</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>Best Standalone Book:</span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>Title     One Day, Everyone Will Have Always Been Agains...</span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>Rating                                                 4.69</span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>Best Series Book:</span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>Title     The Way of KingsBrandon Sanderson</span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>Rating                                 4.63</span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a><span class="fu">## Top Performing Genres</span></span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>Next I wanted to check what tags where performing the best:</span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a><span class="al">![Top Genres](top_genres.png)</span></span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>Kind of a let down there with politics and informitive doing the best, but one could always filter for the geners they want or search within a specific genere. </span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a><span class="fu">## Average Ratings of Top 200 Books</span></span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a><span class="al">![Average Ratings](rating_distribution.png)</span></span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a><span class="fu">## Top Authors</span></span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>Only those with multiple enteries were counted</span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a><span class="al">![Top Authors](top_authors.png)</span></span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a><span class="fu">## My Take Away</span></span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>For the sake of my own limited computing capasity I only took about the top 200 entries of the trending tab. My repo could easliy be tweeked to gather the booklists from a bigger selection or different area of the page if more varied info is wanted. If nothing else this was a great learning experiance for me on how to be smarter with scraping and were you get your data from.</span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>**Full Code Repository: **<span class="co">[</span><span class="ot">GitHub - Data Acquisition</span><span class="co">](https://github.com/gunnargriffith/Data-Acquisition/tree/main)</span></span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>**Book Review Site: **<span class="co">[</span><span class="ot">The Story Graph</span><span class="co">](https://app.thestorygraph.com/browse)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

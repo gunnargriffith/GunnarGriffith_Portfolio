@@ -1,5 +1,5 @@
 ---
-title: "Data Acquisition Project: Finding the Perfect New Book"
+title: "Finding the Perfect New Book"
 ---
 
 ## Introduction
@@ -50,8 +50,46 @@ rating = rating_element.text.strip()
 This process is repeated for each book in the dataset, and the extracted ratings are stored in a list and appended to the main DataFrame as a new column. To improve usability and monitor progress during this relatively time-intensive step, a progress bar was implemented using the tqdm library. This provides real-time feedback on scraping progress across all entries. Although this approach is slower than scraping static content, it ensures accurate retrieval of dynamically loaded data and significantly enhances the analytical value of the final dataset. I also chose to remove the "link" subsection from the final databank as it's not useful for anaylsis.
 
 
-## Analysis
-What you explored (genre vs rating, etc.)
+## First 10 Rows
+| Title                                        | Author              | In A Series   |   Pages |   Year | Genres/Tags                                                                                            |   Rating |
+|:---------------------------------------------|:--------------------|:--------------|--------:|-------:|:-------------------------------------------------------------------------------------------------------|---------:|
+| Project Hail MaryAndy Weir                   | Andy Weir           | False         |     476 |   2021 | ['funny', 'adventurous', 'hopeful', 'science fiction', 'fiction', 'medium-paced']                      |     4.5  |
+| In Her Own LeagueLiz Tomforde                | Liz Tomforde        | True          |     440 |   2026 | ['sports', 'emotional', 'romance', 'lighthearted', 'funny', 'fiction', 'medium-paced', 'contemporary'] |     4.47 |
+| This Story Might Save Your LifeTiffany Crum  | Tiffany Crum        | False         |     368 |   2026 | ['emotional', 'thriller', 'crime', 'tense', 'fiction', 'fast-paced', 'mysterious']                     |     4.22 |
+| The CorrespondentVirginia Evans              | Virginia Evans      | False         |     304 |   2025 | ['reflective', 'emotional', 'literary', 'hopeful', 'fiction', 'medium-paced', 'contemporary']          |     4.54 |
+| Dungeon Crawler CarlMatt Dinniman            | Matt Dinniman       | True          |     446 |   2020 | ['fantasy', 'funny', 'adventurous', 'science fiction', 'fiction', 'fast-paced']                        |     4.4  |
+| And Now, Back To YouB.K. Borison             | B.K. Borison        | True          |     448 |   2026 | ['emotional', 'romance', 'lighthearted', 'funny', 'fiction', 'medium-paced', 'contemporary']           |     4.3  |
+| I Who Have Never Known MenJacqueline Harpman | Jacqueline Harpman  | False         |     201 |   1995 | ['reflective', 'dark', 'literary', 'fiction', 'dystopian', 'medium-paced', 'mysterious']               |     4.21 |
+| Heart the LoverLily King                     | Lily King           | False         |     249 |   2025 | ['reflective', 'sad', 'emotional', 'literary', 'fiction', 'fast-paced']                                |     4.39 |
+| Wild Dark ShoreCharlotte McConaghy           | Charlotte McConaghy | False         |     302 |   2025 | ['dark', 'emotional', 'thriller', 'literary', 'fiction', 'medium-paced', 'mysterious']                 |     4.2  |
+| Half His AgeJennette McCurdy                 | Jennette McCurdy    | False         |     276 |   2026 | ['dark', 'emotional', 'literary', 'fiction', 'fast-paced', 'contemporary']                             |     3.51 |
 
-## Conclusion
-Key takeaways.
+## Data Analysis
+First simple chack I ran with this is highest rated stand alone book and the highest rated series book. The winners are~
+Best Standalone Book:
+Title     One Day, Everyone Will Have Always Been Agains...
+Rating                                                 4.69
+
+Best Series Book:
+Title     The Way of KingsBrandon Sanderson
+Rating                                 4.63
+
+## Top Performing Genres
+Next I wanted to check what tags where performing the best:
+![Top Genres](top_genres.png)
+
+Kind of a let down there with politics and informitive doing the best, but one could always filter for the geners they want or search within a specific genere. 
+
+## Average Ratings of Top 200 Books
+![Average Ratings](rating_distribution.png)
+
+## Top Authors
+Only those with multiple enteries were counted
+![Top Authors](top_authors.png)
+
+## My Take Away
+For the sake of my own limited computing capasity I only took about the top 200 entries of the trending tab. My repo could easliy be tweeked to gather the booklists from a bigger selection or different area of the page if more varied info is wanted. If nothing else this was a great learning experiance for me on how to be smarter with scraping and were you get your data from.
+
+**Full Code Repository: **[GitHub - Data Acquisition](https://github.com/gunnargriffith/Data-Acquisition/tree/main)
+
+**Book Review Site: **[The Story Graph](https://app.thestorygraph.com/browse)
