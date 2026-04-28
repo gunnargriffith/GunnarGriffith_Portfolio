@@ -1,7 +1,7 @@
 ---
 title: "Book Review Site Top 200 Web Scraper"
 layout: single
-permalink: /projects/book-scraper/
+permalink: /projects/dq_analysis/
 author_profile: false
 ---
 
